@@ -215,9 +215,9 @@ function Card(rank, suit) {
 // Preload graphics.
 
 var cardImg0 = new Image(); cardImg0.src= "../../images/cardback.gif";
-var cardImg1 = new Image(); cardImg1.src= "https://codehs.com/uploads/b9b5dbbb4dfdedb41eedebfb1027dd87";
-var cardImg2 = new Image(); cardImg2.src= "https://codehs.com/uploads/33d362665847473ce00710387c4caedf";
-var cardImg3 = new Image(); cardImg3.src= "https://codehs.com/uploads/2a87da3ee6fd77de50cb3d8e5092038a";
+var cardImg1 = new Image(); cardImg1.src= "../../images/jack.gif";
+var cardImg2 = new Image(); cardImg2.src= "../../images/queen.gif";
+var cardImg3 = new Image(); cardImg3.src= "../../images/king.gif";
 
 function cardCreateNode() {
 
@@ -347,11 +347,11 @@ function cardCreateNode() {
   tempNode = document.createElement("IMG");
   tempNode.className = "face";
   if (this.rank == "J")
-    tempNode.src = "https://codehs.com/uploads/b9b5dbbb4dfdedb41eedebfb1027dd87";
+    tempNode.src = "../../images/jack.gif";
   if (this.rank == "Q")
-    tempNode.src = "https://codehs.com/uploads/33d362665847473ce00710387c4caedf";
+    tempNode.src = "../../images/queen.gif";
   if (this.rank == "K")
-    tempNode.src = "https://codehs.com/uploads/2a87da3ee6fd77de50cb3d8e5092038a";
+    tempNode.src = "../../images/king.gif";
 
   // For face cards, add suit characters to the upper-left and lower-right
   // corners.
